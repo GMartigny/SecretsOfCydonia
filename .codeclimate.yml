@@ -1,0 +1,5 @@
+## CodeClimate config file
+---
+
+exclude_paths:
+    - *.min.*
