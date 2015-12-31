@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/GMartigny/SecretsOfCydonia/badges/gpa.svg)](https://codeclimate.com/github/GMartigny/SecretsOfCydonia)
+
 # SecretsOfCydonia
 
 Welcome to my Javascript game repository. I aim to create a well architectured game from scratch using Javascript's canvas.
