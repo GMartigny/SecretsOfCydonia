@@ -1,3 +1,4 @@
+[![GitHub release](https://img.shields.io/github/release/GMartigny/SecretsOfCydonia.svg)](https://github.com/GMartigny/SecretsOfCydonia/releases)
 [![Code Climate](https://codeclimate.com/github/GMartigny/SecretsOfCydonia/badges/gpa.svg)](https://codeclimate.com/github/GMartigny/SecretsOfCydonia)
 
 # SecretsOfCydonia
