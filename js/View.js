@@ -99,8 +99,8 @@ View.GROUND_NAME = "grd";
 View.UNDER_NAME = "und";
 View.BLOCK_NAME = "blk";
 View.OVER_NAME = "ovr";
-View.match;
-View.tileSet;
+View.match = null;
+View.tileSet = null;
 View.prototype = {
     getData: function(map){
         this.ready = false;

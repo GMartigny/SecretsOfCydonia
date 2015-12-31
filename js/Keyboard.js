@@ -22,7 +22,7 @@ KeyboardManager.ESCAPE = 27;
 KeyboardManager.prototype = {
     keydown: function(e){
         if(this.listening){
-            if(this.keys.indexOf(e.keyCode) == -1)
+            if(this.keys.indexOf(e.keyCode) < 0)
                 this.keys.push(e.keyCode);
             MessageBus.getInstance().notifyAll(MessageBus.MSG_TYPES.keydown, this.keys);
         }
@@ -34,7 +34,7 @@ KeyboardManager.prototype = {
         }
     },
     isPressed: function(key){
-        return (this.keys.indexOf(key) === -1)? false : true;
+        return (this.keys.indexOf(key) < 0)? false : true;
     },
     toggleListen: function(){
 		this.listening = !this.listening;

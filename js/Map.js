@@ -2,7 +2,7 @@
 function MapManager(links){
     this.links = links;
     
-    (localStorage.SoC_M && localStorage.SoC_M.hashCode() == localStorage.SoC_HM)?
+    (localStorage.SoC_M && hashCode(localStorage.SoC_M) == localStorage.SoC_HM)?
         this.pos = localStorage.SoC_M.split(";") : this.pos = [0, 0];
 }
 MapManager.prototype = {
@@ -31,6 +31,6 @@ MapManager.prototype = {
     
         var s = this.pos[0]+";"+this.pos[1];
         localStorage.SoC_M = s;
-        localStorage.SoC_HM = s.hashCode();
+        localStorage.SoC_HM = hashCode(s);
     }
 };

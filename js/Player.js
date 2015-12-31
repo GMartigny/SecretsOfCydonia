@@ -4,7 +4,7 @@ function Player(ctx, img){
     this.img = img;
     
     var save = [];
-    (localStorage.SoC_P && localStorage.SoC_P.hashCode() == localStorage.SoC_HP)?
+    (localStorage.SoC_P && hashCode(localStorage.SoC_P) == localStorage.SoC_HP)?
         save = localStorage.SoC_P.split(";") : save = [37, 44, Player.DIR_DOWN];
 	
     this.pos = {
@@ -113,7 +113,7 @@ Player.prototype = {
             
             var s = this.pos.x+";"+this.pos.y+";"+this.dir;
             localStorage.SoC_P = s;
-            localStorage.SoC_HP = s.hashCode();
+            localStorage.SoC_HP = hashCode(s);
         }
         else
             this.anim = 0;
